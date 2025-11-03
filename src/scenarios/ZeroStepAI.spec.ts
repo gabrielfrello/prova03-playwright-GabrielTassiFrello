@@ -1,3 +1,5 @@
+import { test, expect } from '@playwright/test';
+
 test('Validação automática com ZeroStep AI', async ({ page }) => {
     await page.goto('https://frellocalcados.com/contato');
   

@@ -1,3 +1,5 @@
+import { test, expect } from '@playwright/test';
+
 test('Validação de campos obrigatórios', async ({ page }) => {
     await page.goto('https://frellocalcados.com/contato');
     await page.click('button[type="submit"]');

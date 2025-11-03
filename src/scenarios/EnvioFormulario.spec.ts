@@ -1,3 +1,5 @@
+import { test, expect } from '@playwright/test';
+
 test('Envio de formulário com dados válidos', async ({ page }) => {
     await page.goto('https://frellocalcados.com/contato');
   
