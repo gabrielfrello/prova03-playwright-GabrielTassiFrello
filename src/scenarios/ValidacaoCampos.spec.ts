@@ -5,8 +5,8 @@ test('Validação de campos obrigatórios', async ({ page }) => {
 
   await page.click('button[type="submit"]');
 
-  await expect(page.locator('#form-field-name')).toHaveValue('');
-  await expect(page.locator('#form-field-email')).toHaveValue('');
-  await expect(page.locator('#form-field-subject')).toHaveValue('');
-  await expect(page.locator('#form-field-message')).toHaveValue('');
+  await expect(page.locator('#form-field-name')).toHaveAttribute('required', '');
+  await expect(page.locator('#form-field-email')).toHaveAttribute('required', '');
+  await expect(page.locator('#form-field-subject')).toHaveAttribute('required', '');
+  await expect(page.locator('#form-field-message')).toHaveAttribute('required', '');
 });
